@@ -3,7 +3,7 @@ import { FaTwitter, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral text-white px-10 py-12 border-t border-purple-600">
+    <footer className="bg-neutral text-white px-10 py-12 pt-22 border-t border-purple-600">
       <div className="flex flex-wrap justify-between gap-10">
         {/* Left Section */}
         <div className="flex-1 min-w-[260px]">

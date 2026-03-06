@@ -58,9 +58,27 @@ const MainSection = () => {
           </p>
         </div>
 
-        <div className="bg-gradient-to-r from-green-500 to-green-700 rounded-lg p-10 text-white text-center">
-          <h3 className="text-lg">Resolved</h3>
-          <p className="text-4xl font-bold mt-2">{resolved.length}</p>
+        <div className="relative w-full max-w-[708px] h-[250px] rounded-lg overflow-hidden bg-gradient-to-r from-green-500 to-green-700 flex flex-col justify-center items-center text-white text-center">
+          {/* Left Vector */}
+          <img
+            src="/vector1.png"
+            alt="vector"
+            className="absolute left-0 top-0 h-full opacity-40"
+          />
+
+          {/* Right Vector (Flipped) */}
+          <img
+            src="/vector1.png"
+            alt="vector"
+            className="absolute right-0 top-0 h-full opacity-40 scale-x-[-1]"
+          />
+
+          {/* Content */}
+          <h3 className="text-lg relative z-10">Resolved</h3>
+
+          <p className="text-4xl font-bold mt-2 relative z-10">
+            {resolved.length}
+          </p>
         </div>
       </div>
 

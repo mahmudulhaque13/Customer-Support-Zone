@@ -1,20 +1,16 @@
-import { useState } from "react";
-
-import "./App.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import MainSection from "./components/MainSection";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
+    <div className="bg-gray-50 min-h-screen">
       <Navbar />
+
       <MainSection />
 
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -124,14 +124,5 @@
     "priority": "HIGH",
     "status": "Open",
     "createdAt": "2025-02-10"
-  },
-  {
-    "id": 15,
-    "title": "Can't Change Language Setting",
-    "description": "User is unable to switch the UI language from English to Bengali. Setting appears to save, but the interface remains in English.",
-    "customer": "Lamiya",
-    "priority": "LOW",
-    "status": "Open",
-    "createdAt": "2025-02-12"
   }
 ]

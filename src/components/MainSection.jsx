@@ -19,24 +19,21 @@ const MainSection = () => {
 
     setInProgress([...inProgress, updatedTicket]);
 
-    // optional (customer tickets list update)
     setTickets(tickets.map((t) => (t.id === ticket.id ? updatedTicket : t)));
 
-    toast.info(`"${ticket.title}" added to task status`);
+    toast.info(`"${ticket.title}" added to task`);
   };
 
   const handleComplete = (ticket) => {
     setInProgress(inProgress.filter((t) => t.id !== ticket.id));
-
     setResolved([...resolved, ticket]);
-
     setTickets(tickets.filter((t) => t.id !== ticket.id));
 
-    toast.success(`"${ticket.title}" marked as resolved`);
+    toast.success(`"${ticket.title}" resolved`);
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-6 pt-20 py-8">
+    <div className="max-w-[1440px] mx-auto px-6 pt-24 pb-10">
       {/* Banner */}
       <div className="grid md:grid-cols-2 gap-6 mb-10">
         <div className="bg-gradient-to-r from-purple-600 to-purple-400 rounded-lg p-10 text-white text-center">
@@ -50,13 +47,13 @@ const MainSection = () => {
         </div>
       </div>
 
-      {/* Main Section */}
-      <div className="grid md:grid-cols-3 gap-6">
+      {/* Main Layout */}
+      <div className="grid lg:grid-cols-3 gap-8">
         {/* Customer Tickets */}
-        <div className="md:col-span-2">
+        <div className="lg:col-span-2">
           <h2 className="font-semibold mb-4 text-gray-700">Customer Tickets</h2>
 
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 gap-4">
             {tickets.map((ticket) => (
               <div
                 key={ticket.id}
@@ -75,7 +72,7 @@ const MainSection = () => {
 
           {inProgress.length === 0 ? (
             <p className="text-sm text-gray-500">
-              Select a ticket to add to Task Status
+              Select a ticket to start task
             </p>
           ) : (
             inProgress.map((ticket) => (
@@ -86,7 +83,7 @@ const MainSection = () => {
                 <p className="font-semibold text-sm mb-2">{ticket.title}</p>
 
                 <button
-                  className="btn text-white bg-green-600 btn-sm w-full"
+                  className="btn bg-green-600 text-white btn-sm w-full"
                   onClick={() => handleComplete(ticket)}
                 >
                   Complete

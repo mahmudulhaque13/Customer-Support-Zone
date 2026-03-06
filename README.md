@@ -1,6 +1,6 @@
 1. What is JSX, and why is it used?
 
-JSX is a syntax in React that lets you write HTML-like code inside JavaScript.
+JSX(JavaScript XML) is a syntax in React that lets you write HTML-like code inside JavaScript.
 It makes UI code easier to read and create.
 
 2. What is the difference between State and Props?
@@ -22,8 +22,4 @@ By lifting state up to a parent component and passing it through props.
 
 5. How is event handling done in React?
 
-Using camelCase events and functions.
-
-Example:
-
-<button onClick={handleClick}>Click</button>
+Event handling in React is done by defining functions that respond to user actions (like clicks or inputs) and attaching them to elements using React event attributes.

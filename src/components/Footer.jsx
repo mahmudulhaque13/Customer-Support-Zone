@@ -3,13 +3,13 @@ import { FaTwitter, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral text-white border-t border-purple-600">
+    <footer className="bg-neutral text-white border-t border-purple-500">
       <div className="max-w-[1440px] mx-auto px-6 py-12">
         <div className="flex flex-wrap justify-between gap-10">
           <div className="flex-1 min-w-[260px]">
             <h3 className="text-xl font-bold mb-3">CS — Ticket System</h3>
 
-            <p className="text-gray-400 text-sm leading-6">
+            <p className="text-gray-500 text-sm leading-6">
               Welcome to the Customer Support Zone. This React-based application
               helps manage customer tickets and resolve issues efficiently.
             </p>

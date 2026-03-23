@@ -21,8 +21,8 @@ const Navbar = () => {
           </h2>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
-            <ul className="flex gap-6 text-sm text-gray-700">
+          <div className="hidden md:flex items-center gap-7">
+            <ul className="flex gap-6 text-sm text-gray-600">
               <li className="cursor-pointer">Home</li>
               <li className="cursor-pointer">FAQ</li>
               <li className="cursor-pointer">Changelog</li>
